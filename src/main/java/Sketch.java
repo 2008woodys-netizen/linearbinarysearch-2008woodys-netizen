@@ -24,7 +24,9 @@ public class Sketch {
     new Item(19967, 45)
   };                             
   public int linearSearch(int catNumToFind){
-    //complete this method
+    for(int i=0; i<store.length; i++)
+      if(store[i].getCatNum==catNumToFind)
+        return store[i].getInventory();
     return -1;
   }
   public int recursiveLinearSearch(int catNumToFind, int startIndex){
